@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  Counter
-//
-//  Created by Vladimir Generalov on 08.08.2025.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class CounterController: UIViewController {
 
     @IBOutlet weak var countValueLabel: UILabel!
     
@@ -15,10 +8,6 @@ class ViewController: UIViewController {
     
     private var count = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction func tapDecrementCountButton() {
         if count > 0 {
             count -= 1
